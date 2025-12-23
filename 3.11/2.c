@@ -17,8 +17,6 @@ void main(void) {
         break;
     }
     printf("其对应的字符为%c\n", a);
-    while (getchar() != '\n');  // 手动清理缓冲区
-    getchar();
 }
 
 // 注意当输入无效时，如%d期望读取整型（ASCII数字部分和+、-部分）而输入了其他（ASCII非上述部分），那么scanf不会像getchar一样从缓冲区取走当前字符，故需要手动清理

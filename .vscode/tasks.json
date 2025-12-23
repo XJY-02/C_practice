@@ -4,10 +4,6 @@
             "type": "cppbuild",
             "label": "C/C++: gcc.exe 生成活动文件",
             "command": "C:\\MinGW\\mingw64\\bin\\gcc.exe",
-            "presentation": {
-                "focus": true, // 关键：运行后聚焦终端
-                "panel": "shared"
-            },
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
