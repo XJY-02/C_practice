@@ -16,12 +16,14 @@ int main(void) {
                 ;
             }
             continue;
-        } else
+        } else {
+            while (getchar() != '\n') {
+                ;
+            }
             break;
-    }
-    while (getchar() != '\n') {
-        ;
-    }
+        }
+        }
+
     for (int i = input, firstprinted = 0; i <= input + 10; i++) {
         if (firstprinted) {
             putchar(',');

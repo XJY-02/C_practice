@@ -20,10 +20,10 @@ int main(void) {
             }
             continue;
         }
+        while (getchar() != '\n') {
+            ;
+        }
         break;
-    }
-    while (getchar() != '\n') {
-        ;
     }
 
     int first_printed = 0;

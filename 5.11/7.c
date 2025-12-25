@@ -18,11 +18,12 @@ int main(void) {
                 ;
             }
             continue;
-        } else
+        } else {
+            while (getchar() != '\n') {
+                ;
+            }
             break;
-    }
-    while (getchar() != '\n') {
-        ;
+        }
     }
 
     printf("the squre is %.15f\n", square(num));

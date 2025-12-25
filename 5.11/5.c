@@ -17,12 +17,14 @@ int main(void) {
                     ;
                 }
                 continue;
-            } else
+            } else {
+                while (getchar() != '\n') {
+                    ;
+                }
                 break;
+            }
         }
-        while (getchar() != '\n') {
-            ;
-        }
+
         if (days < 0) {
             printf("运行结束\n");
             break;
