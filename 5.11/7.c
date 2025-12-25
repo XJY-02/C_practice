@@ -12,16 +12,13 @@ int main(void) {
     printf("enter a float: ");
     while (1) {
         int result = scanf("%lf", &num);
+        while (getchar() != '\n') {
+            ;
+        }
         if (result != 1) {
             printf("invalid\n");
-            while (getchar() != '\n') {
-                ;
-            }
             continue;
         } else {
-            while (getchar() != '\n') {
-                ;
-            }
             break;
         }
     }

@@ -10,19 +10,16 @@ int main(void) {
     printf("enter a int: ");
     while (1) {
         int result = scanf("%d", &input);
+        while (getchar() != '\n') {
+            ;
+        }
         if (result != 1) {
             printf("invalid\n");
-            while (getchar() != '\n') {
-                ;
-            }
             continue;
         } else {
-            while (getchar() != '\n') {
-                ;
-            }
             break;
         }
-        }
+    }
 
     for (int i = input, firstprinted = 0; i <= input + 10; i++) {
         if (firstprinted) {

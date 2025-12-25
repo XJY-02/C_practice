@@ -31,15 +31,12 @@ int main(void) {
     while (1) {
         printf("enter a capital letter(A~Z): ");
         int result = scanf(" %c", &input);
-        if (result != 1 || (input < 'A' || input > 'Z')) {
-            printf("invalid\n");
-            while (getchar() != '\n') {
-                ;
-            }
-            continue;
-        }
         while (getchar() != '\n') {
             ;
+        }
+        if (result != 1 || (input < 'A' || input > 'Z')) {
+            printf("invalid\n");
+            continue;
         }
         break;
     }

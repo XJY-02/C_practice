@@ -12,18 +12,15 @@ int main(void) {
     int hight;
     while (1) {
         printf("enter a hight in centimeters: ");
+        while ((getchar()) != '\n') {
+            ;
+        }
         while (1) {
             int result = scanf("%d", &hight);
             if (result != 1) {
                 printf("invalid input:\n");
-                while ((getchar()) != '\n') {
-                    ;
-                }
                 continue;
             } else {
-                while ((getchar()) != '\n') {
-                    ;
-                }
                 break;
             }
         }

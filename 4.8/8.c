@@ -13,11 +13,12 @@ int main(void) {
 
     while (1) {
         printf("输入里程（英里）和汽油消耗量（加仑）：");
-        if (scanf("%f%f", &mileage, &gasoline_consumption) != 2) {
+        int result = scanf("%f%f", &mileage, &gasoline_consumption);
+        while (getchar() != '\n') {
+            ;
+        }
+        if (result != 2) {
             printf("无效输入\n");
-            while (getchar() != '\n') {
-                ;
-            }
             continue;
         }
         break;

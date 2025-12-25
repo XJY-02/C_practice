@@ -11,16 +11,13 @@ int main(void) {
         printf("enter days: ");
         while (1) {
             int result = scanf("%d", &days);
+            while (getchar() != '\n') {
+                ;
+            }
             if (result != 1) {
                 printf("invalid\n");
-                while (getchar() != '\n') {
-                    ;
-                }
                 continue;
             } else {
-                while (getchar() != '\n') {
-                    ;
-                }
                 break;
             }
         }

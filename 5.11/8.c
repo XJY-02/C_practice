@@ -13,15 +13,12 @@ int main(void) {
     printf("Enter an integer to serve as the second operand: ");
     while (1) {
         int result = scanf("%d", &SecondOperand);
-        if (result != 1) {
-            printf("invalid\n");
-            while (getchar() != '\n') {
-                ;
-            }
-            continue;
-        }
         while (getchar() != '\n') {
             ;
+        }
+        if (result != 1) {
+            printf("invalid\n");
+            continue;
         }
         break;
     }
