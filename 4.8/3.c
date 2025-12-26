@@ -14,7 +14,7 @@ int main(void) {
             while (getchar() != '\n');
             continue;
         }
-        // char next_char = getchar();
+        // int next_char = getchar();
         // if (next_char != '\n') {
         //     printf("多余输入: %c", next_char);
         //     while ((next_char = getchar()) != '\n') printf("%c", next_char);
