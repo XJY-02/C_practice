@@ -52,7 +52,7 @@ int main(void) {
     for (i = 0; i < BufferSize - 1; i++) {
         int c =
             getchar();  // getchar()返回-1、0~255的int,用int类型接收,-1表示错误或EOF
-        if (c == -1) {
+        if (c == EOF) {
             break;
         } else if (c == '.') {
             buffer[i] = '!';
