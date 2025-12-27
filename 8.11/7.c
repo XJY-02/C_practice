@@ -82,8 +82,8 @@ int getchoice() {
         } else if (choice == 'q') {
             return choice;
         } else {
-            printf("  无效输入，请输入正确选项!\r");
-            Sleep(500);
+            printf("  无效输入，请输入正确选项!");
+            Sleep(1000);
             printf("\r                                               \r");
             continue;
         }
