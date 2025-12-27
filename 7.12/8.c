@@ -61,7 +61,7 @@ float gethour() {
     return hour;
 }
 
-void showmenu() {
+void show_menu() {
     printf(
         "*****************************************************************\n"
         "Enter the number corresponding to the desired pay rate or action:\n"
@@ -93,7 +93,7 @@ int getchoice() {
 
 int main(void) {
     while (1) {
-        showmenu();
+        show_menu();
         int choice = getchoice();
         system("cls");
         if (choice == 5) {

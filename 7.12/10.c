@@ -40,7 +40,7 @@ float getwage() {
     return wage;
 }
 
-void showmenu() {
+void show_menu() {
     printf(
         "*****************************************************************\n"
         "输入类别:\n"
@@ -72,7 +72,7 @@ int getchoice() {
 
 int main(void) {
     while (1) {
-        showmenu();
+        show_menu();
         int choice = getchoice();
         system("cls");
         if (choice == 5) {

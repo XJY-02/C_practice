@@ -14,7 +14,7 @@
 #define WUP20EXTRA 0.5
 #define ZHEKOU 0.05
 
-void showmenu() {
+void show_menu() {
     printf(
         "*************************************\n"
         "输入类别:\n"
@@ -121,7 +121,7 @@ int main(void) {
     while (1) {
         system("cls");
         showgouwuche(yangji, tiancai, carrot);
-        showmenu();
+        show_menu();
         int choice = getchoice();
         if (choice == 'z') {
             printf("退出成功\n");
