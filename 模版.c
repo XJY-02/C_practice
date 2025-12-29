@@ -1,4 +1,5 @@
 #include <Windows.h>
+#include <assert.h>
 #include <conio.h>
 #include <limits.h>
 #include <math.h>
